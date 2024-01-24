@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: url('webimage/firstpage.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between ;
+    text-align: center;
+}
+
+
+ nav img{
+    width: 108px;
+ }
+
+ .nav-link{
+   flex: 1;
+  text-align: left;
+ }
+
+ .nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+ }
+
+ .nav-link ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+ }
+
+ .nav-link ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background: rgb(113, 113, 233);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+ }
+
+ .nav-link ul li:hover::after{
+      width: 100%;
+ }
+
+.search-box {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  background-color: #fff;
+  padding-bottom: 8px;
+  text-align: center;
+  width:35%;
+}
+
+ .nav-action{
+  display: flex;
+text-align: right;
+} 
+.login-b {
+  padding-left: 120px;
+  padding: 8px 16px;
+  background-color: #eec69b;
+  color:purple;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-b:hover {
+  background-color: #e6004c;
+}
+.signup-b {
+  padding-left: 120px;
+  padding: 8px 16px;
+  background-color: #e7a259;
+  color:purple;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.signup-b:hover {
+  background-color: #e6004c;
+}
+ .text-box{
+   width: 90%;
+   color:#fff ;
+   position:absolute ;
+   top: 50%;
+   left: 50%;
+   transform:translate(-50%,-50%) ;
+   text-align: center;
+ }
+
+ .text-box h1{
+     font-size: 40px;
+ }
+ .text-box p{
+   margin: 10px 0 40px;
+   font-size: 19px;
+ }
+
+ .hero-btn{
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   border: 1px solid #fff;
+   padding: 12px 34px;
+   font-size: 13px;
+   background: transparent;
+   position: relative;
+   cursor: pointer;
+ }
+
+ .hero-btn:hover{
+   border: 1px solid #f44336;
+   background:gray;
+   transition: 0.5s;
+ }
+
+nav .fas{
+   display: none;
+}
+
+
+
+ @media (max-width: 992px){
+   .text-box h1{
+      font-size: 18px;
+  }
+
+  .nav-link ul li{
+   display: block;
+} 
+.nav-link {
+   position:absolute;
+   background: rgb(191, 222, 235);
+   height: 100vh;
+   width: 200px;
+   top: 0;
+   right:-200px;
+   text-align: left;
+   z-index: 2;
+   transition: 1s;
+
+}
+
+
+nav .fas{
+   display: block;
+   color:black;
+   margin: 9px;
+   font-size: 30px;
+   cursor: pointer;
+}
+
+     .nav-link ul{
+   padding: 30px;
+     }
+
+     .row{
+      flex-direction: column;
+     }
+   .homepage{
+    height:230vh;
+   }
+.about h1{
+  font-size: 25px;
+}
+.about h2{
+     font-size:12px;
+}
+
+ }
+
+
+ /* courses */
+
+ .course{
+   width:80%;
+   margin: auto;
+   text-align: center;
+   padding-top: 84px;
+ }
+
+ h1{
+   font-size: 36px;
+   font-weight: 600;
+ }
+
+ p{
+   color:black;
+   font-size: 19px;
+   font-weight: 300;
+   line-height:22px;
+   padding: 10px;
+   text-align: left;
+ }
+
+ .row{
+   margin-top: 5%;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .course-col{
+   flex-basis: 31%;
+   background: lightgray;
+   border-radius: 10px;
+   margin-bottom: 10%;
+   padding: 20px 12px;
+   box-sizing: border-box;
+   transition:0.5s;
+ }
+
+ h3{
+   text-align: center;
+   font-weight: 600;
+   margin: 10px 0;
+ }
+
+ .course-col:hover{
+  box-shadow: 0 0 20px 0px rgb(0,0,0,0.5);
+ }
+
+ .footer{
+  font-size: 23px;
+  text-align: center;
+  background-color: rgb(240, 243, 246);
+  padding:6px;
+  position:relative;
+ }
+
+ .footer p{
+  font-size: 15px;
+  text-align: center;
+ }
+
+.icons .fas{
+  padding: 12px;
+  cursor: pointer;
+  margin: 0, 13px;
+  color:rgb(52, 52, 81);
+}
+
+
+/* about us page */
+.homepage{
+  background-image: url(webimage/first.png);
+  height:100vh;
+  width:100%;
+  text-align:center;
+  background:cover;
+  background-position:center ;
+  
+}
+
+.about{
+  color:#fff;
+}
+.about h1{
+  color:black;
+  font-size:40px;
+}
+
+.about a{
+  top: 40px;
+}
+
+/* course page */
+
+.coursepage{
+  background: linear-gradient(to bottom, rgb(209, 208, 208), rgb(128, 128, 202));
+}
+
+.other-courses{
+    flex-basis: 31%;
+    background: lightgray;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 15px 12px;
+    box-sizing: border-box;
+    transition:0.5s;
+
+}
+
+.other-courses p{
+   padding-left:390px;
+}
+
+
+
+/* for signup page */
+
+.signup-box {
+  width: 300px;
+  margin: 20px auto; /* Center the signup box on the page with some top and bottom margin */
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px; /* Add rounded corners to the signup box */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.signup-box input[type="text"], .signup-box input[type="email"], 
+.signup-box input[type="password"]{
+  width: 100%; /* Make the input fields 100% wide */
+  padding: 10px;
+  margin-bottom: 15px; /* Add space between input fields */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.signup-box button {
+  width: 100%; /* Make the button 100% wide */
+  padding: 10px;
+  background-color: #4caf50; /* Set a green color for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-box button:hover {
+  background-color: #45a049; /* Darken the button color on hover */
+}
+
+/* Other existing styles remain unchanged */
+
+
+/* for login page */
+.login-box {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #45a049;
+}
+
+.options {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.options p {
+  margin: 5px 0;
+}
+
+.options a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+

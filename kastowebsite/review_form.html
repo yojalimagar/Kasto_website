@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Review</title>
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Submit Your Review</h1>
+        </header>
+        <main>
+            <form action="submit_review.php" method="post">
+                <div class="form-group">
+                    <label for="user_name">Your Name:</label>
+                    <input type="text" id="user_name" name="user_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="review_content">Your Review:</label>
+                    <textarea id="review_content" name="review_content" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Review</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2023 Online Learning Platform</p>
+        </footer>
+    </div>
+</body>
+</html>

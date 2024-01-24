@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasto World</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Hind+Madurai&family=Noto+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="homepage">
+        <nav>
+            <a href="index1.html"><img src="webimage/logo3.png"></a>
+    
+        <div class="nav-link" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li> <a href="Home.html">HOME</a></li>
+                <li> <a href="About.html">ABOUT</a></li>
+                <li> <a href="Course.html">COURSE</a></li>
+                <li> <a href="Blog.html">BLOG</a></li>
+                <li> <a href="Contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+    <div class="about">
+        <h1>OUR STORY</h1>
+        <h2> We have a small passionate group of students<br>
+            who have come together to create this platform to help you learn programming.<br>
+            Our goal is to provide you with comprehensive study materials and notes<br>
+            to make your programming journey more accessible and enjoyable. Whether you're a beginner or <br>
+            looking to enhance your skills, we've got you covered. The best part? It's completely<br>
+            free! However, we want to emphasize the importance of dedication and consistency in your <br>
+            learning process. Programming is a valuable skill that requires practice and perseverance.<br>
+            So, let's embark on this learning adventure together, and remember, success comes with commitment.<br>
+                                                 Happy coding!
+        </h2>
+
+        <a href="login.html" class="hero-btn">Lets Grow Togather</a>
+</div>
+    </div>
+</section>
+
+
+
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>
+        Start your programming journey with Kasto today and unlock 
+        the world of endless possibilities.<br> Empower yourself with the skills to build
+        innovative applications, solve complex problems, and thrive in the digital age
+    </p>
+       
+    <div class="icons">
+         <i class="fas fa-brands fa-square-facebook"></i>
+         <i class="fas fa-brands fa-instagram"></i>
+         <i class="fas fa-brands fa-square-twitter"></i>
+         <i class="fas fa-brands fa-linkedin"></i>
+    </div>
+</section>
+
+
+
+
+<!-- JavaScript for Toggle Menu -->
+    <script>
+
+        var navLlinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+</html>
